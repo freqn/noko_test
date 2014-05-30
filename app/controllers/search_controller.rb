@@ -3,7 +3,8 @@ class SearchController < ApplicationController
   require 'open-uri'
 
   def index
-    @doc = Nokogiri::HTML(open("http://www.reddit.com/r/ruby"))
+    @url_1 = "http://www.reddit.com/r/ruby"
+    @doc = Nokogiri::HTML(open(@url_1))
   end
 
 end
