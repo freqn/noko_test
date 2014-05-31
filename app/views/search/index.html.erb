@@ -1,8 +1,8 @@
 <h1>Nokogiri Test</h1>
-<p>Current headlines on <%= link_to "reddit.com/r/ruby", @url_1 %> </p>
+<p>Current headlines on <%= link_to "reddit.com/r/ruby",  'http://reddit.com/r/ruby' %> </p>
 
 <ol>
-  <% @doc.css('a.title').each do |link| %>
-    <li><%=link_to link.content, link['href'] %></li>
+  <% @fetch_link.each do |url| %>
+    <li><%= link_to url[:content], url[:href], target: '_' %></li>
   <% end %>
 </ol>
