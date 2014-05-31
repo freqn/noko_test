@@ -18,3 +18,7 @@ gem 'spring',        group: :development
 group :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
 end
+
+group :production do
+  gem 'rails_12factor', '0.0.2'
+end
