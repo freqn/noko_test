@@ -12,6 +12,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'nokogiri'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'sprockets', '2.11.0'
+gem 'mechanize'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 

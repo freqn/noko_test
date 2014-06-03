@@ -2,7 +2,7 @@
 <p>Current headlines on <%= link_to "reddit.com/r/ruby",  'http://reddit.com/r/ruby' %> </p>
 
 <ol>
-  <% @fetch_link.each do |url| %>
+  <% @fetch_reddit.each do |url| %>
     <li><%= link_to url[:content], url[:href], target: '_' %></li>
   <% end %>
 </ol>
