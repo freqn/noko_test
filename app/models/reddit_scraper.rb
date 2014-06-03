@@ -11,7 +11,8 @@ class RedditScraper
   end
 
   def fetch_reddit_headlines
-    mech_page = @agent.get('http://www.reddit.com/r/ruby')
+    @url = 'http://www.reddit.com/r/ruby'
+    mech_page = @agent.get(@url)
 
     num_pages_to_scrape = 2
     count = 0
