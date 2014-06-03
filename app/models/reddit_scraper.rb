@@ -13,7 +13,7 @@ class RedditScraper
   def fetch_reddit_headlines
     mech_page = @agent.get('http://www.reddit.com/r/ruby')
 
-    num_pages_to_scrape = 30
+    num_pages_to_scrape = 2
     count = 0
 
     while(num_pages_to_scrape > count)
