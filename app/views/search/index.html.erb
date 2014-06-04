@@ -1,6 +1,3 @@
-<h1>Nokogiri & Mechanize Test</h1>
-<p>Current headlines on <%= link_to "reddit.com/r/ruby",  'http://reddit.com/r/ruby', target: '_' %> </p>
-
 <ol>
   <% @fetch_reddit.each do |url| %>
     <li><%= link_to url[:content], url[:href], target: '_' %></li>

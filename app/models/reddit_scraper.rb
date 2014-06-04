@@ -10,11 +10,12 @@ class RedditScraper
     @agent = Mechanize.new
   end
 
-  def fetch_reddit_headlines
-    @url = 'http://www.reddit.com/r/ruby'
+  def fetch_reddit_headlines(subreddit)
+    subreddit = 'all' if subreddit.nil?
+    @url = "http://www.reddit.com/r/#{subreddit}"
     mech_page = @agent.get(@url)
 
-    num_pages_to_scrape = 2
+    num_pages_to_scrape = 4
     count = 0
 
     while(num_pages_to_scrape > count)
