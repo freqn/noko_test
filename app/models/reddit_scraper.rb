@@ -18,7 +18,7 @@ class RedditScraper
     num_pages_to_scrape = 2
     count = 0
 
-    while(num_pages_to_scrape > count)
+    while(num_pages_to_scrape > count )
       page = mech_page.parser
 
       page.css('a.title').each do |link|
@@ -31,9 +31,12 @@ class RedditScraper
       @headline
 
       count += 1
-      mech_page = @agent.get(page.css('.nextprev').css('a').last.attributes["href"].value)
+       if mech_page.link_with(dom_class: 'nextprev') != nil
+         mech_page = @agent.get(page.css('.nextprev').css('a').last.attributes['href'].value)
+       else
+         num_pages_to_scrape = 1
+       end
     end
-
     return @headline
   end
 end

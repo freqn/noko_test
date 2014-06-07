@@ -2,7 +2,7 @@
   <%= label_tag(:q, "Enter a Subreddit (example: ruby):") %>
 
   <p><%= text_field_tag(:q) %></p>
-  <p><%= submit_tag 'Fetch', class: 'btn btn-default' %></p>
+  <p><%= submit_tag 'Fetch', class: 'btn btn-primary' %></p>
 
   <% if params[:q].blank? %>
     <% params[:q] = 'all' %>
