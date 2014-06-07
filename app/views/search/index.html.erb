@@ -1,5 +1,12 @@
-<ol>
-  <% @fetch_reddit.each do |url| %>
-    <li><%= link_to url[:content], url[:href], target: '_' %></li>
-  <% end %>
-</ol>
+
+<div>
+  <ol>
+    <% @fetch_reddit.each do |url| %>
+      <li><%= link_to url[:content], url[:href], target: '_' %></li>
+    <% end %>
+  </ol>
+</div>
+
+<div>
+<%= render 'tweets/tweets' %>
+</div>

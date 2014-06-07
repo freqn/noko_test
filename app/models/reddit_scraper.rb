@@ -17,7 +17,7 @@ class RedditScraper
     num_pages_to_scrape = 1
     count = 0
     if mech_page.link_with(text: /next /)
-      num_pages_to_scrape = 4
+      num_pages_to_scrape = 2
     end
 
     while(num_pages_to_scrape > count )
