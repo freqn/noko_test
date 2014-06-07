@@ -10,8 +10,8 @@ class RedditScraper
     @agent = Mechanize.new
   end
 
-  def fetch_reddit_headlines(subreddit = 'all')
-    subreddit = 'all' if subreddit.nil?
+  def fetch_reddit_headlines(subreddit)
+    subreddit = 'all' if subreddit.blank?
     @url = "http://www.reddit.com/r/#{subreddit}"
     mech_page = @agent.get(@url)
 
