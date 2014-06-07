@@ -12,11 +12,13 @@ class RedditScraper
 
   def fetch_reddit_headlines(subreddit)
     subreddit = 'all' if subreddit.blank?
-    @url = "http://www.reddit.com/r/#{subreddit}"
-    mech_page = @agent.get(@url)
-
-    num_pages_to_scrape = 2
+    url = "http://www.reddit.com/r/#{subreddit}"
+    mech_page = @agent.get(url)
+    num_pages_to_scrape = 1
     count = 0
+    if mech_page.link_with(text: /next /)
+      num_pages_to_scrape = 4
+    end
 
     while(num_pages_to_scrape > count )
       page = mech_page.parser
@@ -27,16 +29,13 @@ class RedditScraper
         else
           @headline << { content: link.content, href: "http://reddit.com" + link['href'] }
         end
-      end
-      @headline
+       end
 
       count += 1
-       if mech_page.link_with(dom_class: 'nextprev') != nil
-         mech_page = @agent.get(page.css('.nextprev').css('a').last.attributes['href'].value)
-       else
-         num_pages_to_scrape = 1
-       end
+      if num_pages_to_scrape > 1
+        mech_page = @agent.get(page.css('.nextprev').css('a').last.attributes['href'].value)
+      end
     end
-    return @headline
+    @headline
   end
 end

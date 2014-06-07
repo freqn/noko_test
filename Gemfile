@@ -15,6 +15,11 @@ gem 'mechanize'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
+group :development do
+  gem 'pry'
+  gem 'pry-byebug'
+end
+
 group :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
 end
