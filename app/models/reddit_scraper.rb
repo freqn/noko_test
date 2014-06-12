@@ -12,7 +12,9 @@ class RedditScraper
 
   def fetch_reddit_headlines(subreddit)
     subreddit = 'all' if subreddit.blank?
+
     url = "http://www.reddit.com/r/#{subreddit}"
+
     mech_page = @agent.get(url)
     num_pages_to_scrape = 1
     count = 0
