@@ -7,6 +7,7 @@ class SearchController < ApplicationController
   end
 
   def tweet_links
+    params[:q] = 'all' if params[:q].blank?
     @tweets = @client.search(params[:q]).take(50).each do |tweet|
         results = tweet.text
         if results.include? "http"
