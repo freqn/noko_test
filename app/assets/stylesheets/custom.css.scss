@@ -41,6 +41,7 @@ h5 {
 }
 
 .jumbotron{
+  background: #ffffff;
   margin: 0 auto;
   padding: 1%;
   text-align: center;
@@ -48,6 +49,23 @@ h5 {
 
 .sec-heading{
   text-align: center;
+}
+
+.input {
+  width: 14%;
+  font-size: 22px;
+  border: none;
+  background: #E6E6E6;
+  padding-left: 2em;
+}
+ .btn-success {
+   background: orange;
+   border: none;
+ }
+
+
+textarea:focus, input:focus{
+    outline: 0;
 }
 
 /* footer */

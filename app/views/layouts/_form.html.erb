@@ -1,9 +1,9 @@
 <div class="jumbotron">
-<h2>Looking for something simple, yet relevant?</h2>
+<h3>Looking for something simple?</h3>
 <%= form_tag("/", method: "get") do %>
-  <%= label_tag(:q, "Enter a search term (example: ruby):") %>
 
-  <p><%= text_field_tag(:q) %></p>
+
+  <p><%= text_field_tag :q, nil, class: 'input', placeholder: 'search term', autofocus: true %></p>
   <p><%= submit_tag 'Fetch', class: "btn btn-lg btn-success" %></p>
 
   <% if params[:q].blank? %>
