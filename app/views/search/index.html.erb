@@ -1,10 +1,21 @@
 <div>
-  <%= render 'layouts/form_reddit' %>
+  <%= render 'layouts/form' %>
 </div>
-<div>
+
+<div class="container=fluid">
+  <h5>Subreddit: <%=link_to "#{params[:q]}", "http://reddit.com/r/#{params[:q]}", target: "_" %></h5>
   <ol>
     <% @fetch_reddit.each do |url| %>
       <li><%= link_to url[:content], url[:href], target: '_' %></li>
+    <% end %>
+  </ol>
+</div>
+
+<div class="container=fluid">
+  <h5>Twitter links pertaining to <b><%= params[:q] %></b></h5>
+  <ol>
+    <% @tweets.each do |tweet| %>
+      <li><%= tweet.text %></li>
     <% end %>
   </ol>
 </div>
