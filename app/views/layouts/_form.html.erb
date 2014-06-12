@@ -1,11 +1,14 @@
+<div class="jumbotron">
+<h2>Looking for something simple, yet relevant?</h2>
 <%= form_tag("/", method: "get") do %>
-  <%= label_tag(:q, "Enter a Subreddit (example: ruby) or term:") %>
+  <%= label_tag(:q, "Enter a search term (example: ruby):") %>
 
   <p><%= text_field_tag(:q) %></p>
-  <p><%= submit_tag 'Fetch', class: 'btn btn-primary' %></p>
+  <p><%= submit_tag 'Fetch', class: "btn btn-lg btn-success" %></p>
 
   <% if params[:q].blank? %>
     <% params[:q] = 'all' %>
   <% end %>
 
 <% end %>
+</div>

@@ -1,21 +1,23 @@
-<div>
-  <%= render 'layouts/form' %>
-</div>
+<div class="fluid-container">
+  <div>
+    <%= render 'layouts/form' %>
+  </div>
 
-<div class="container=fluid">
-  <h5>Subreddit: <%=link_to "#{params[:q]}", "http://reddit.com/r/#{params[:q]}", target: "_" %></h5>
-  <ol>
-    <% @fetch_reddit.each do |url| %>
-      <li><%= link_to url[:content], url[:href], target: '_' %></li>
-    <% end %>
-  </ol>
-</div>
+  <div class="col-xs-6">
+    <h5 class="sec-heading">Subreddit: <%=link_to "#{params[:q]}", "http://reddit.com/r/#{params[:q]}", target: "_" %></h5>
+    <ol>
+      <% @fetch_reddit.each do |url| %>
+        <li><%= link_to url[:content], url[:href], target: '_' %></li>
+        <% end %>
+      </ol>
+    </div>
 
-<div class="container=fluid">
-  <h5>Twitter links pertaining to <b><%= params[:q] %></b></h5>
-  <ol>
-    <% @tweets.each do |tweet| %>
-      <li><%= tweet.text %></li>
-    <% end %>
-  </ol>
+  <div class="col-xs-6">
+    <h5 class="sec-heading">Tweets with links about <b><%= params[:q] %>:</b></h5>
+    <ol>
+      <% @tweets.each do |tweet| %>
+        <li><%= tweet.text %></li>
+        <% end %>
+      </ol>
+    </div>
 </div>
