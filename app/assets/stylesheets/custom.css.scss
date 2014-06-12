@@ -52,11 +52,12 @@ h5 {
 }
 
 .input {
+  text-align: center;
   width: 14%;
-  font-size: 22px;
   border: none;
+  border-radius: 3px;
   background: #E6E6E6;
-  padding-left: 2em;
+  //padding: 0 3%;
 }
  .btn-success {
    background: orange;
