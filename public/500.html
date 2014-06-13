@@ -51,6 +51,10 @@
     color: #666;
     box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
   }
+
+  a {
+    text-decoration: none;
+  }
   </style>
 </head>
 
@@ -58,10 +62,10 @@
   <!-- This file lives in public/500.html -->
   <div class="dialog">
     <div>
-      <h1>Meh, you should try something else</a></h1>
+      <h1>Meh, you should try something else</h1>
 
     </div>
-    <p>This page is ugly, so <a href="#" onClick="history.go(-1);return true;">GO BACK NOW!!!</a></p>
+    <p><input type="button" value="Go Back From Whence You Came!" onclick="history.back(-1)" /></p>
   </div>
 </body>
 </html>
