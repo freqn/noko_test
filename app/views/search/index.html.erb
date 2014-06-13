@@ -13,7 +13,7 @@
     </div>
 
   <div class="col-xs-6">
-    <h5 class="sec-heading">Tweets mentioning '<b><%= params[:q] %>':</b></h5>
+    <h5 class="sec-heading">Tweets mentioning '<b><%= params[:q] %>'</b></h5>
     <ol>
       <% @tweets.each do |tweet| %>
         <li><%= tweet.text %></li>
