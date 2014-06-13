@@ -60,7 +60,12 @@ h5 {
   //padding: 0 3%;
 }
  .btn-success {
-   background: orange;
+   background: #FF8000;
+   border: none;
+ }
+
+ .btn-success:hover {
+   background: #DF7401;
    border: none;
  }
 
