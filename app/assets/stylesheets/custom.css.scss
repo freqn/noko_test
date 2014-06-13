@@ -57,8 +57,14 @@ h5 {
   border: none;
   border-radius: 3px;
   background: #E6E6E6;
-  //padding: 0 3%;
+  color: transparent;
+  text-shadow: 0 0 0 gray;
+  text-align: center;
+  &:focus {
+        outline: none;
+    }
 }
+
  .btn-success {
    background: #FF8000;
    border: none;
