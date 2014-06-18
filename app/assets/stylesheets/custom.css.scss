@@ -2,34 +2,7 @@
 
 /* universal */
 
-html {
-  overflow-y: scroll;
-}
 
-body {
-  padding-top: 20px;
-  //padding-left: 30px;
-}
-
-section {
-  overflow: auto;
-}
-
-textarea {
-  resize: vertical;
-}
-
-.center {
-  text-align: center;
-}
-
-.center h1 {
-  margin-bottom: 10px;
-}
-
-h5 {
-  padding-top: 10px;
-}
 
 .btn-primary {
   background: #DF691A;
@@ -72,6 +45,16 @@ h5 {
 
 textarea:focus, input:focus{
     outline: 0;
+}
+
+.navbar-default {
+  background: #ffffff;
+  border: none;
+}
+
+.navbar-header p {
+  padding-top: 15px;
+  color: gray;
 }
 
 /* footer */

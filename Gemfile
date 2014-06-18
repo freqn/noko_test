@@ -13,6 +13,7 @@ gem 'bootstrap-sass', '~> 3.1.1'
 gem 'sprockets', '2.11.0'
 gem 'mechanize'
 gem 'twitter'
+gem 'devise', '~> 3.2.4'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
