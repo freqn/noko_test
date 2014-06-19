@@ -1,3 +1,6 @@
+$navbar-height:      35px;
+$navbar-bg: #E0F8F7;
+
 @import "bootstrap";
 
 /* universal */
@@ -13,10 +16,10 @@
   background: #B45F04;
 }
 
-.jumbotron{
+.center{
   background: #ffffff;
   margin: 0 auto;
-  padding: 1%;
+  padding: 0;
   text-align: center;
 }
 
@@ -30,6 +33,7 @@
   border: none;
   border-radius: 3px;
   background: #E6E6E6;
+  margin: 5px 0;
 }
 
  .btn-success {
@@ -47,18 +51,69 @@ textarea:focus, input:focus{
     outline: 0;
 }
 
-.navbar-default {
-  background: #ffffff;
-  border: none;
+.navbar-brand {
+  color: gray;
+  font-weight: bold;
+  text-shadow: 0px 1px 0px #e5e5ee;
 }
 
-.navbar-header p {
-  padding-top: 15px;
-  color: gray;
+.navbar-default {
+  border-radius: 0;
+  border: none;
+  -webkit-box-shadow: 0px 5px 13px -2px rgba(50, 50, 50, 0.15);
+  -moz-box-shadow:    0px 5px 13px -2px rgba(50, 50, 50, 0.15);
+  box-shadow:         0px 5px 13px -2px rgba(50, 50, 50, 0.15);
+}
+
+.nav_width {
+  width: 1080px;
+}
+
+.devise {
+  padding-left: 150px;
+}
+
+.status {
+  color: #D8D8D8;
+  font-size: 1em;
+}
+
+.container-fluid{
+  padding: 0px;
+}
+
+.col-xs-6{
+  width: 50%;
+  padding-top: 20px;
+}
+
+.about {
+  margin: 0 auto;
+  width: 70%;
+}
+
+/* form fields */
+
+.email_field, .password_field {
+  text-align: center;
+}
+
+.spacer {
+  margin-top: 5px;
+}
+
+/* notifications */
+
+.alert-info {
+  margin: 0 auto 20px 0;
+  text-align: center;
 }
 
 /* footer */
 
+.footer{
+  padding-top: 15px;
+}
 
 small {
   margin: 0 auto;

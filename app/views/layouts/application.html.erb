@@ -8,19 +8,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
   <%= render 'layouts/header' %>
+  
   <% flash.each do |name, msg| %>
      <%= content_tag(:div, msg, class: "alert alert-info") %>
   <% end %>
-  <div class-"container">
-
 
     <div>
         <%= yield %>
     </div>
 
   <%= render 'layouts/footer' %>
-</div>
+
 </body>
 </html>
