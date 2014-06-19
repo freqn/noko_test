@@ -9,10 +9,12 @@
 </head>
 <body>
   <%= render 'layouts/header' %>
-  
+
   <% flash.each do |name, msg| %>
      <%= content_tag(:div, msg, class: "alert alert-info") %>
   <% end %>
+
+  <p class="status center">---This application is under massive construction, but please feel free to search---</p>
 
     <div>
         <%= yield %>
