@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
+
+/*window.setTimeout(function() {
+  $(".flash").fadeOut(500, 0).slideUp(500, function(){
+      $(this).remove();
+  });
+}, 1000);*/
