@@ -5,16 +5,16 @@
 
   <div class="col-xs-6">
     <h5 class="sec-heading">Subreddit: <%=link_to "#{params[:q]}", "http://reddit.com/r/#{params[:q]}", target: "_" %></h5>
-    <ol>
+    <ol class="headline_list">
       <% @fetch_reddit.each do |url| %>
         <li><%= link_to url[:content], url[:href], target: '_' %></li>
         <% end %>
       </ol>
     </div>
 
-  <div class="col-xs-6">
+  <div class="col-xs">
     <h5 class="sec-heading">Tweets mentioning '<b><%= params[:q] %>'</b></h5>
-    <ol>
+    <ol class="headline_list">
       <% @tweets.each do |tweet| %>
         <li><%= tweet.text %></li>
         <% end %>
