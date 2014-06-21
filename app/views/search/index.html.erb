@@ -4,7 +4,7 @@
   </div>
 
   <div class="col-xs-6">
-    <h5 class="sec-heading">Subreddit: <%=link_to "#{params[:q]}", "http://reddit.com/r/#{params[:q]}", target: "_" %></h5>
+    <h5 class="sec-heading">Subreddit: <%=link_to "#{@reddit_query}", "http://reddit.com/r/#{@reddit_query}", target: "_" %></h5>
     <ol class="headline_list">
       <% @fetch_reddit.each do |url| %>
         <li><%= link_to url[:content], url[:href], target: '_' %></li>
@@ -13,11 +13,11 @@
     </div>
 
   <div class="col-xs-6">
-    <h5 class="sec-heading">Tweets mentioning '<b><%= params[:q] %>'</b></h5>
+      <h5 class="sec-heading">Tweets mentioning <%= link_to "#{params[:q]}", "https://twitter.com/search?q=#{@tweet_query}&src=typd"%>:</h5>
     <ol class="headline_list">
       <% @tweets.each do |tweet| %>
-        <li><%= tweet.text %></li>
+        <li><%= tweet %></li>
         <% end %>
       </ol>
     </div>
-</div>
+  </div>
