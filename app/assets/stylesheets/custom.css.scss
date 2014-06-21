@@ -183,6 +183,11 @@ textarea:focus, input:focus{
 
 .footer{
   padding-top: 15px;
+  background: blue;
+  margin: 0 auto;
+  p {
+    vertical-align: center;
+  }
 }
 
 small {
