@@ -16,7 +16,12 @@
       <h5 class="sec-heading">Tweets mentioning <%= link_to "#{params[:q]}", "https://twitter.com/search?q=#{@tweet_query}&src=typd"%>:</h5>
     <ol class="headline_list">
       <% @tweets.each do |tweet| %>
-        <li><%= tweet %></li>
+      <% url = URI.extract(tweet).join(' ') %>
+      <% if tweet.include?('http') && url.length > 15 %>
+      <% link = url.match(/https?:\/\/[\S]+/) %>
+      <li><%= tweet.sub("#{link}", '') %>
+        <%= link_to "#{link}",  "#{link}" %></li>
+      <% end %>
         <% end %>
       </ol>
     </div>

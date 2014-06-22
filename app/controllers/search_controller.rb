@@ -14,11 +14,8 @@ class SearchController < ApplicationController
     params[:q] = 'rails' if params[:q].blank?
     @tweet_query = params[:q].gsub(/\s/,"%20").downcase
     @tweets = []
-    @client.search(params[:q]).take(50).each do |tweet|
+    @client.search(params[:q]).take(300).each do |tweet|
         @tweets << tweet.text
-        if @tweets.include? "http"
-          x = URI.extract(@tweets)
-        end
     end
   end
 end
