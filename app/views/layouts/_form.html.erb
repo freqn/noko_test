@@ -1,6 +1,6 @@
 <div class="jumbotron center">
 <h3>Looking for something simple?</h3>
-<%= form_tag(root_path, method: "get") do %>
+<%= form_tag("/", method: "get") do %>
 
 
   <p><%= text_field_tag :q, nil, class: 'input', placeholder: 'type a word', autofocus: true %></p>
