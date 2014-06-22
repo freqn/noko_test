@@ -20,7 +20,7 @@
       <% if tweet.include?('http') && url.length > 15 %>
       <% link = url.match(/https?:\/\/[\S]+/) %>
       <li><%= tweet.sub("#{link}", '') %>
-        <%= link_to "#{link}",  "#{link}" %></li>
+        <%= link_to "#{link}",  "#{link}", target: "_" %></li>
       <% end %>
         <% end %>
       </ol>
