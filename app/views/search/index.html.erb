@@ -13,7 +13,7 @@
     </div>
 
   <div class="col-xs-6">
-      <h5 class="sec-heading">Tweets mentioning <%= link_to "#{params[:q]}", "https://twitter.com/search?q=#{@tweet_query}&src=typd"%>:</h5>
+      <h5 class="sec-heading">Tweets mentioning <%= link_to "#{params[:q]}", "https://twitter.com/search?q=#{@tweet_query}&src=typd", target: "_"%>:</h5>
     <ol class="headline_list">
       <% @tweets.each do |tweet| %>
       <% url = URI.extract(tweet).join(' ') %>
