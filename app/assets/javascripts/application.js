@@ -15,8 +15,12 @@
 //= require bootstrap
 //= require_tree .
 
-/*window.setTimeout(function() {
-  $(".flash").fadeOut(500, 0).slideUp(500, function(){
-      $(this).remove();
-  });
-}, 1000);*/
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll > 0) {
+        $(".navbar, .dropdown-menu").addClass("active");
+    }
+    else {
+        $(".navbar, .dropdown-menu").removeClass("active");
+    }
+});
