@@ -14,13 +14,3 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
-
-$(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-    if (scroll > 0) {
-        $(".navbar, .dropdown-menu").addClass("active");
-    }
-    else {
-        $(".navbar, .dropdown-menu").removeClass("active");
-    }
-});
