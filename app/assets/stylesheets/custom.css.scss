@@ -1,6 +1,15 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+@import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Doppio+One);
 
 $navbar-height:      45px;
+$goog_font: 'Doppio One' ;
+
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+  -webkit-box-shadow:$top $left $blur $color #{$inset};
+  -moz-box-shadow:$top $left $blur $color #{$inset};
+  box-shadow:$top $left $blur $color #{$inset};
+}
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
@@ -8,11 +17,7 @@ $navbar-height:      45px;
           border-radius: $radius;
 }
 
-@import "bootstrap";
-
 /* universal */
-
-
 
 .btn-primary {
   background: #DF691A;
@@ -65,10 +70,7 @@ textarea:focus, input:focus{
 }
 
 .navbar-brand {
-  color: gray;
-  font-family: 'Roboto Slab', serif;
-  font-weight: bold;
-  text-shadow: 0px 1px 0px #e5e5ee;
+  font-family: $goog_font;
 }
 
 /* navigation */
@@ -78,31 +80,38 @@ textarea:focus, input:focus{
   box-shadow: none;
   @include border-radius(0);
   border: none;
-  -o-transition:.3s;
-  -ms-transition:.3s;
-  -moz-transition:.3s;
-  -webkit-transition:.3s;
-  transition:.3s;
-
+  -o-transition:.8s;
+  -ms-transition:.8s;
+  -moz-transition:.8s;
+  -webkit-transition:.8s;
+  transition:.8s;
 }
 
 .active {
-  background: #E6E6E6;
+  background: #BDBDBD;
   @include border-radius(0);
   border: none;
   -webkit-box-shadow: 0px 2px 10px -2px rgba(50, 50, 50, 0.5);
   -moz-box-shadow:    0px 2px 10px -2px rgba(50, 50, 50, 0.5);
   box-shadow:         0px 2px 10px -2px rgba(50, 50, 50, 0.5);
-  -o-transition:.3s;
-  -ms-transition:.3s;
-  -moz-transition:.3s;
-  -webkit-transition:.3s;
-  transition:.3s;
+  -o-transition:.8s;
+  -ms-transition:.8s;
+  -moz-transition:.8s;
+  -webkit-transition:.8s;
+  transition:.8s;
+}
+
+.white {
+  color: white !important;
+}
+
+.dark {
+  color: #BDBDBD;
 }
 
 .navbar-right, .dropdown-menu {
   font-weight: bold;
-  font-family: 'Roboto Slab', serif;
+  font-family: $goog_font;
   font-size: 1em;
 }
 
@@ -112,7 +121,7 @@ textarea:focus, input:focus{
 }
 
 .nav_width {
-  width: 100%;
+  width: 98%;
 }
 
 .dropdown-menu{
@@ -147,14 +156,7 @@ textarea:focus, input:focus{
   padding: 0px;
 }
 
-.col-xs-6{
-  width: 50%;
-  padding: 20px 0;
-}
 
-.headline_list {
-  padding: 0 3.2em;
-}
 .about {
   margin: 0 auto;
   width: 70%;
@@ -185,22 +187,22 @@ textarea:focus, input:focus{
 
 ::-webkit-input-placeholder {
    font-size: 1.1em;
-   font-family: 'Roboto Slab', serif;
+   font-family: $goog_font, serif;
 }
 
 :-moz-placeholder { /* Firefox 18- */
    font-size: 1.1em;
-   font-family: 'Roboto Slab', serif;
+   font-family: $goog_font, serif;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
    font-size: 1.1em;
-   font-family: 'Roboto Slab', serif;
+   font-family: $goog_font, serif;
 }
 
 :-ms-input-placeholder {
    font-size: 1.1em;
-   font-family: 'Roboto Slab', serif;
+   font-family: $goog_font, serif;
 }
 
 /* footer */
