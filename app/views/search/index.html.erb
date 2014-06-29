@@ -3,41 +3,43 @@
     <%= render 'layouts/form' %>
   </div>
 
-  <div class="reddit">
-    <div class="col-xs-6 col-md-4">
-      <h5 class="sec-heading">Subreddit: <%=link_to "#{@reddit_query}", "http://reddit.com/r/#{@reddit_query}", target: "_" %></h5>
-      <ol class="headline_list">
-        <% @fetch_reddit.each do |url| %>
-          <li><%= link_to url[:content], url[:href], target: '_' %></li>
-        <% end %>
-      </ol>
-    </div>
-  </div>
-
-  <div class="hn_news">
-    <div class="col-xs-6 col-md-4">
-      <h5 class="sec-heading">Hacker News (work in progress):</h5>
-      <ol class="headline_list">
-      <% @fetch_hn.each do |url| %>
-        <li><%= link_to url[:content], url[:href], target: '_' %></li>
-        <% end %>
-      </ol>
-    </div>
-  </div>
-
-  <div class="twitter">
-    <div class="col-xs-6 col-md-4">
-      <h5 class="sec-heading">Tweets mentioning <%= link_to "#{params[:q]}", "https://twitter.com/search?q=#{@tweet_query}&src=typd", target: "_"%>:</h5>
-      <ol class="headline_list">
-        <% @tweets.each do |tweet| %>
-          <% url = URI.extract(tweet).join(' ') %>
-          <% if tweet.include?('http') && url.length > 15 %>
-            <% link = url.match(/https?:\/\/[\S]+/) %>
-            <li><%= tweet.sub("#{link}", '') %>
-            <%= link_to "#{link}",  "#{link}", target: "_" %></li>
+  <div class="content-wrapper">
+    <div class="reddit">
+      <div class="col-xs-6 col-md-4">
+        <h5 class="sec-heading">Subreddit:</br><%=link_to "#{@reddit_query}", "http://reddit.com/r/#{@reddit_query}", target: "_" %></h5>
+        <ol class="headline_list">
+          <% @fetch_reddit.each do |url| %>
+            <li><%= link_to url[:content], url[:href], target: '_' %></li>
           <% end %>
-        <% end %>
-      </ol>
+        </ol>
+      </div>
+    </div>
+
+    <div class="hn_news">
+      <div class="col-xs-6 col-md-4">
+        <h5 class="sec-heading">Hacker News:</br>(work in progress)</h5>
+        <ol class="headline_list">
+          <% @fetch_hn.each do |url| %>
+            <li><%= link_to url[:content], url[:href], target: '_' %></li>
+          <% end %>
+        </ol>
+      </div>
+    </div>
+
+    <div class="twitter">
+      <div class="col-xs-6 col-md-4">
+        <h5 class="sec-heading">Tweets containing:</br><%= link_to "#{params[:q]}", "https://twitter.com/search?q=#{@tweet_query}&src=typd", target: "_"%>:</h5>
+        <ol class="headline_list">
+          <% @tweets.each do |tweet| %>
+            <% url = URI.extract(tweet).join(' ') %>
+            <% if tweet.include?('http') && url.length > 15 %>
+              <% link = url.match(/https?:\/\/[\S]+/) %>
+              <li><%= tweet.sub("#{link}", '') %>
+              <%= link_to "#{link}",  "#{link}", target: "_" %></li>
+            <% end %>
+          <% end %>
+          </ol>
+        </div>
+      </div>
     </div>
   </div>
-</div>
