@@ -6,7 +6,7 @@
   <div class="content-wrapper">
     <div class="reddit">
       <div class="col-xs-6 col-md-4">
-        <h5 class="sec-heading">Subreddit:</br><%=link_to "#{@reddit_query}", "http://reddit.com/r/#{@reddit_query}", target: "_" %></h5>
+        <h5 class="sec-heading">Reddit:</br><%=link_to "#{@reddit_query}", "http://reddit.com/r/#{@reddit_query}", target: "_" %></h5>
         <ol class="headline_list">
           <% @fetch_reddit.each do |url| %>
             <li><%= link_to url[:content], url[:href], target: '_' %></li>
@@ -28,7 +28,7 @@
 
     <div class="twitter">
       <div class="col-xs-6 col-md-4">
-        <h5 class="sec-heading">Tweets containing:</br><%= link_to "#{params[:q]}", "https://twitter.com/search?q=#{@tweet_query}&src=typd", target: "_"%>:</h5>
+        <h5 class="sec-heading">Twitter:</br><%= link_to "#{params[:q]}", "https://twitter.com/search?q=#{@tweet_query}&src=typd", target: "_"%>:</h5>
         <ol class="headline_list">
           <% @tweets.each do |tweet| %>
             <% url = URI.extract(tweet).join(' ') %>
