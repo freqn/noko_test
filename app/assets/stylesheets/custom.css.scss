@@ -58,7 +58,7 @@ h3 {
   min-width: 150px;
   height: 2.0em;
   border: none;
-  @include border-radius(8px);
+  @include border-radius(5px);
   background: #E6E6E6;
   margin: 5px 0;
 }
@@ -67,9 +67,15 @@ h3 {
    background: #FF8000;
    border: none;
    @include box-shadow(0, 1px, 2px, rgba(0, 0, 0, 0.3));
+   -o-transition:.1s;
+   -ms-transition:.1s;
+   -moz-transition:.1s;
+   -webkit-transition:.1s;
+   transition:.1s;
  }
 
  .btn-success:hover {
+   @include border-radius(5px);
    background: #DF7401;
    @include box-shadow(0, 1px, 3px, rgba(0, 0, 0, 0.5));
    border: none;
@@ -226,7 +232,7 @@ textarea:focus, input:focus{
 }
 
 .headline_list {
-  padding: 0.8em 0.8em 2em 2.3em;
+  padding: 0.8em 0.8em 2em 2.5em;
   @include border-radius(8px);
   @include box-shadow(0, 1px, 2px, rgba(0, 0, 0, 0.3));
   background: #E5E9E9;
