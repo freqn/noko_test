@@ -9,7 +9,8 @@
         <h5 class="sec-heading">Reddit:</br><%=link_to "#{@reddit_query}", "http://reddit.com/r/#{@reddit_query}", target: "_" %></h5>
         <ol class="headline_list">
           <% @fetch_reddit.each do |url| %>
-            <li><%= link_to url[:content], url[:href], target: '_' %></li>
+            <li> <%= link_to "", "#", class: "glyphicon glyphicon-star"%>
+              <%= link_to url[:content], url[:href], target: '_' %></li>
           <% end %>
         </ol>
       </div>
@@ -20,7 +21,8 @@
         <h5 class="sec-heading">Hacker News:</br>(work in progress)</h5>
         <ol class="headline_list">
           <% @fetch_hn.each do |url| %>
-            <li><%= link_to url[:content], url[:href], target: '_' %></li>
+            <li> <%= link_to "", "#", class: "glyphicon glyphicon-star"%>
+            <%= link_to url[:content], url[:href], target: '_' %></li>
           <% end %>
         </ol>
       </div>
@@ -34,7 +36,8 @@
             <% url = URI.extract(tweet).join(' ') %>
             <% if tweet.include?('http') && url.length > 15 %>
               <% link = url.match(/https?:\/\/[\S]+/) %>
-              <li><%= tweet.sub("#{link}", '') %>
+              <li><%= link_to "", "#", class: "glyphicon glyphicon-star"%>
+                <%= tweet.sub("#{link}", '') %>
               <%= link_to "#{link}",  "#{link}", target: "_" %></li>
             <% end %>
           <% end %>
