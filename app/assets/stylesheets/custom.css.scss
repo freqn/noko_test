@@ -258,7 +258,7 @@ textarea:focus, input:focus{
 
 .row:hover {
   background-color: #B3B8B9;
-  @include box-shadow(0px, 0px, 0px, 1px, white);
+  //@include box-shadow(0px, 0px, 0px, 1px, white);
 }
 
 
