@@ -16,6 +16,7 @@ gem 'mechanize'
 gem 'twitter'
 gem 'devise', '~> 3.2.4'
 gem 'simple_form'
+gem 'algoliasearch-rails'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 

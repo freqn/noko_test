@@ -7,41 +7,41 @@
     <div class="reddit">
       <div class="col-xs-6 col-md-4">
         <h5 class="sec-heading">Reddit:</br><%=link_to "#{@reddit_query}", "http://reddit.com/r/#{@reddit_query}", target: "_" %></h5>
-        <ol class="headline_list">
+        <div class="headline_list">
           <% @fetch_reddit.each do |url| %>
-            <li> <%= link_to "", "#", class: "glyphicon glyphicon-star"%>
-              <%= link_to url[:content], url[:href], target: '_' %></li>
+            <div class="row"><%= link_to "", "#", class: "glyphicon glyphicon-cloud"%>
+              <%= link_to url[:content], url[:href], target: '_' %></div>
           <% end %>
-        </ol>
+        </div>
       </div>
     </div>
 
     <div class="hn_news">
       <div class="col-xs-6 col-md-4">
         <h5 class="sec-heading">Hacker News:</br>(work in progress)</h5>
-        <ol class="headline_list">
+        <div class="headline_list">
           <% @fetch_hn.each do |url| %>
-            <li> <%= link_to "", "#", class: "glyphicon glyphicon-star"%>
-            <%= link_to url[:content], url[:href], target: '_' %></li>
+            <div class="row"><%= link_to "", "#", class: "glyphicon glyphicon-cloud"%>
+            <%= link_to url[:content], url[:href], target: '_' %></div>
           <% end %>
-        </ol>
+        </div>
       </div>
     </div>
 
     <div class="twitter">
       <div class="col-xs-6 col-md-4">
         <h5 class="sec-heading">Twitter:</br><%= link_to "#{params[:q]}", "https://twitter.com/search?q=#{@tweet_query}&src=typd", target: "_"%>:</h5>
-        <ol class="headline_list">
+        <div class="headline_list">
           <% @tweets.each do |tweet| %>
             <% url = URI.extract(tweet).join(' ') %>
             <% if tweet.include?('http') && url.length > 15 %>
               <% link = url.match(/https?:\/\/[\S]+/) %>
-              <li><%= link_to "", "#", class: "glyphicon glyphicon-star"%>
+              <div class="row"><%= link_to "", "#", class: "glyphicon glyphicon-cloud"%>
                 <%= tweet.sub("#{link}", '') %>
-              <%= link_to "#{link}",  "#{link}", target: "_" %></li>
+              <%= link_to "#{link}",  "#{link}", target: "_" %></div>
             <% end %>
           <% end %>
-          </ol>
+        </div>
         </div>
       </div>
     </div>
