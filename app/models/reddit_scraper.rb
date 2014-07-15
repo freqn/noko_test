@@ -11,7 +11,7 @@ class RedditScraper
   end
 
   def fetch_reddit_headlines(subreddit)
-    subreddit = 'rails' if subreddit.blank?
+    # subreddit = 'rails' if subreddit.blank?
 
     url = "http://www.reddit.com/r/#{subreddit}"
 
@@ -19,7 +19,7 @@ class RedditScraper
     num_pages_to_scrape = 1
     count = 0
     if mech_page.link_with(text: /next /)
-      num_pages_to_scrape = 2
+      num_pages_to_scrape = 3
     end
 
     while(num_pages_to_scrape > count )
@@ -31,7 +31,7 @@ class RedditScraper
         else
           @headline << { content: link.content, href: "http://reddit.com" + link['href'] }
         end
-       end
+      end
 
       count += 1
       if num_pages_to_scrape > 1
