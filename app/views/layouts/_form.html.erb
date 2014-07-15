@@ -4,6 +4,7 @@
 
 
   <p><%= text_field_tag :q, nil, class: 'input', placeholder: 'search here', autofocus: true %></p>
+
   <p><%= submit_tag 'Fetch', class: "btn btn-lg btn-success" %></p>
 
   <% if params[:q].blank? %>
