@@ -4,13 +4,14 @@
 
 $(window).scroll ->
   scroll = $(window).scrollTop()
-  nav_header = ".navbar-brand, .navbar-right li a"
+  nav_trans = ".navbar-brand, .navbar-right li a"
+  nav_drop = ".navbar, .dropdown-menu"
   if scroll > 0
-    $(".navbar, .dropdown-menu").addClass "active"
-    $(nav_header).addClass "white"
-    $(nav_header).removeClass "dark"
+    $(nav_drop).addClass "active"
+    $(nav_trans).addClass "white"
+    $(nav_trans).removeClass "dark"
   else
-    $(".navbar, .dropdown-menu").removeClass "active"
-    $(nav_header).removeClass "white"
-    $(nav_header).addClass "dark"
+    $(nav_drop).removeClass "active"
+    $(nav_trans).removeClass "white"
+    $(nav_trans).addClass "dark"
   return
