@@ -26,6 +26,9 @@ end
 
 group :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
+  gem 'capybara'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
 end
 
 group :production do

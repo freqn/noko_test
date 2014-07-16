@@ -1,6 +1,5 @@
 class SearchController < ApplicationController
 
-
   def index
     params[:q] = 'rails' if params[:q].blank?
     @reddit_query = params[:q].gsub(/\s/,'')

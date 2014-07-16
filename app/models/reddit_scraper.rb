@@ -11,7 +11,6 @@ class RedditScraper
   end
 
   def fetch_reddit_headlines(subreddit)
-    # subreddit = 'rails' if subreddit.blank?
 
     url = "http://www.reddit.com/r/#{subreddit}"
 
@@ -32,11 +31,7 @@ class RedditScraper
           @headline << { content: link.content, href: "http://reddit.com" + link['href'] }
         end
       end
-
       count += 1
-      if num_pages_to_scrape > 1
-        mech_page = @agent.get(page.css('.nextprev').css('a').last.attributes['href'].value)
-      end
     end
     @headline
   end
