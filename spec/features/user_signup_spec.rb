@@ -13,6 +13,6 @@ feature "Sign up as a user" do
 
     expect(User.count).to eq(1)
     expect(page).to have_content 'Welcome! You have signed up successfully.'
-    expect(page).to have_link 'Sign out',       href: destroy_user_session_path
+    expect(page).to have_link 'Log out',       href: destroy_user_session_path
   end
 end

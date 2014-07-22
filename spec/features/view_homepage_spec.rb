@@ -9,5 +9,5 @@ feature "View the home page" do
 		expect(page).to have_text 		'Looking for something simple?'
     expect(page).to have_css 			'.sec-heading'
   end
-  
+
 end
