@@ -28,12 +28,6 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     addressable (2.3.6)
-    algoliasearch (1.2.8)
-      httpclient (~> 2.3)
-      json (>= 1.5.1)
-    algoliasearch-rails (1.10.4)
-      algoliasearch (>= 1.2.5)
-      json (>= 1.5.1)
     arel (5.0.1.20140414130214)
     bcrypt (3.1.7)
     bootstrap-sass (3.1.1.0)
@@ -79,13 +73,14 @@ GEM
       railties (>= 3.0.0)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
+    font-awesome-rails (4.1.0.0)
+      railties (>= 3.2, < 5.0)
     hike (1.2.3)
     http (0.6.1)
       http_parser.rb (~> 0.6.0)
     http-cookie (1.0.2)
       domain_name (~> 0.5)
     http_parser.rb (0.6.0)
-    httpclient (2.4.0)
     i18n (0.6.9)
     jbuilder (2.0.7)
       activesupport (>= 3.0.0, < 5)
@@ -239,13 +234,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  algoliasearch-rails
   bootstrap-sass (~> 3.1.1)
   capybara
   coffee-rails (~> 4.0.0)
   database_cleaner
   devise (~> 3.2.4)
   factory_girl_rails
+  font-awesome-rails
   jbuilder (~> 2.0)
   jquery-rails
   mechanize
