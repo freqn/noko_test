@@ -10,7 +10,7 @@
         <h3 class="sub-head"><%=link_to "#{@reddit_query}", "http://reddit.com/r/#{@reddit_query}", target: "_" %></h3>
         <div class="headline_list">
           <% @fetch_reddit.each do |url| %>
-            <div class="row"><%= link_to "", "#", class: "glyphicon glyphicon-cloud"%>
+            <div class="row"><%= link_to "", "#", class: "fa fa-bomb"%>
               <%= link_to url[:content], url[:href], target: '_' %></div>
           <% end %>
         </div>
@@ -26,7 +26,7 @@
             <% url = URI.extract(tweet).join(' ') %>
             <% if tweet.include?('http') && url.length > 15 %>
               <% link = url.match(/https?:\/\/[\S]+/) %>
-              <div class="row"><%= link_to "", "#", class: "glyphicon glyphicon-cloud"%>
+              <div class="row"><%= link_to "", "#", class: "fa fa-bomb"%>
                 <%= tweet.sub("#{link}", '') %>
               <%= link_to "#{link}",  "#{link}", target: "_" %>
               </div>
@@ -42,7 +42,7 @@
         <h3 class="sub-head">(in progress)</span></h3>
         <div class="headline_list">
           <% @fetch_hn.each do |url| %>
-            <div class="row"><%= link_to "", "#", class: "glyphicon glyphicon-cloud"%>
+            <div class="row"><%= link_to "", "#", class: "fa fa-bomb"%>
             <%= link_to url[:content], url[:href], target: '_' %></div>
           <% end %>
         </div>
