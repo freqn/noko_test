@@ -43,7 +43,7 @@
         <div class="headline_list">
           <% @fetch_hn.each do |url| %>
             <div class="row"><%= link_to "", "#", class: "glyphicon glyphicon-cloud"%>
-            <%= link_to url[:content], user_session_path,  target: '_' %></div>
+            <%= link_to url[:content], url[:href], target: '_' %></div>
           <% end %>
         </div>
       </div>
