@@ -316,7 +316,7 @@ textarea:focus, input:focus{
   @include box-shadow(inset 0, 1px, 6px, rgba(0, 0, 0, 0.9));
   //@include box-shadow(0, 2px, 8px, rgba(0, 0, 0, 0.3));
   background: #fff;
-  //font-weight: bold;
+  font-weight: bold;
   font-size: 1.5em;
   @include transition(2s);
   position:relative;
@@ -357,13 +357,16 @@ textarea:focus, input:focus{
   background-color: #63645F;
   border: none;
   //@include box-shadow(0px, 0px, 0px, 1px, white);
+  .fa-bomb {
+    text-shadow: -2px 2px 5px rgba(26, 26, 31, 1);
+  }
   a {
     color: #FFD046;
   }
 }
 
 .row a:hover{
-  color: #FF6F2A;
+  color: #FE9A35;
   text-decoration: none;
   border: none;
 }
