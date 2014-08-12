@@ -15,3 +15,4 @@ $(window).scroll ->
     $(nav_trans).removeClass "white"
     $(nav_trans).addClass "dark"
   return
+

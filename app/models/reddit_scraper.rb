@@ -4,19 +4,17 @@ require 'mechanize'
 
 
 class RedditScraper
-
   def initialize
     @headline = []
     @agent = Mechanize.new
   end
 
   def fetch_reddit_headlines(subreddit)
-
     url = "http://www.reddit.com/r/#{subreddit}"
-
     mech_page = @agent.get(url)
     num_pages_to_scrape = 1
     count = 0
+    
     if mech_page.link_with(text: /next /)
       num_pages_to_scrape = 3
     end
