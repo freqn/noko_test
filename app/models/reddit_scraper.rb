@@ -21,7 +21,6 @@ class RedditScraper
 
     while(num_pages_to_scrape > count )
       page = mech_page.parser
-
       page.css('a.title').each do |link|
         @headline << { content: link.content, href: "http://reddit.com" + link['href'] } unless link.content.include?('/r/')
       end
