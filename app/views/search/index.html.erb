@@ -7,7 +7,7 @@
     <div class="reddit">
       <div class="col-xs-6 col-md-4">
         <h5 class="sec-heading"><span class="pennant"><span class="fa fa-reddit fa-6"></span></span></br></h5>
-        <h3 class="sub-head"><%=link_to "#{@reddit_query}", "http://reddit.com/r/#{@reddit_query}", target: "_" %></h3>
+        <h3 class="sub-head"><%=link_to "#{params[:q]}", "http://reddit.com/r/#{@reddit_query}", target: "_" %></h3>
         <div class="headline_list">
           <% @fetch_reddit.each do |url| %>
             <div class="row"><%= link_to "", "#", class: "fa fa-thumbs-o-up "%>

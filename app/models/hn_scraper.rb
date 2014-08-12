@@ -17,10 +17,10 @@ class HnScraper
     url = "http://news.ycombinator.com"
 
     mech_page = @agent.get(url)
-    num_pages_to_scrape = 2
+    num_pages_to_scrape = 3
     count = 0
     if mech_page.link_with(text: /More /)
-      num_pages_to_scrape = 2
+      num_pages_to_scrape = 3
     end
 
     while(num_pages_to_scrape > count )

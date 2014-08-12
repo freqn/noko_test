@@ -96,7 +96,7 @@ h3 {
 .input {
   text-align: center;
   width: 14%;
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: bold;
   min-width: 150px;
   height: 2.0em;
@@ -407,6 +407,7 @@ textarea:focus, input:focus{
   -webkit-transform-origin:20% 20%;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
+  text-shadow: -2px 2px 5px rgba(26, 26, 31, 1);
 }
 
 /*
