@@ -10,11 +10,11 @@ class RedditScraper
   end
 
   def fetch_reddit_headlines(subreddit)
-    url = "http://www.reddit.com/r/#{subreddit}"
+    url = "http://www.reddit.com/search?q=#{subreddit.gsub(/\s/,"+")}"
     mech_page = @agent.get(url)
     num_pages_to_scrape = 1
     count = 0
-    
+
     if mech_page.link_with(text: /next /)
       num_pages_to_scrape = 3
     end
@@ -23,11 +23,7 @@ class RedditScraper
       page = mech_page.parser
 
       page.css('a.title').each do |link|
-        if link['href'].include?('http')
-          @headline << { content: link.content, href: link['href'] }
-        else
-          @headline << { content: link.content, href: "http://reddit.com" + link['href'] }
-        end
+        @headline << { content: link.content, href: "http://reddit.com" + link['href'] } unless link.content.include?('/r/')
       end
       count += 1
     end
