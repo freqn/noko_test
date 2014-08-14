@@ -15,7 +15,7 @@ class RedditScraper
     num_pages_to_scrape = 1
     count = 0
 
-    if mech_page.link_with(text: /next /)
+    if mech_page.link_with(text: /next ›/)
       num_pages_to_scrape = 3
     end
 
@@ -30,7 +30,11 @@ class RedditScraper
           end
         end
       end
+
       count += 1
+      if num_pages_to_scrape > 1
+        mech_page = @agent.get(page.css('.nextprev').css('a').last.attributes['href'].value)
+      end
     end
     @headline
   end
