@@ -24,8 +24,8 @@
         <div class="headline_list">
           <% @tweets.each do |tweet| %>
             <% url = URI.extract(tweet).join(' ') %>
-            <% if tweet.include?('http') && url.length > 15 %>
-              <% link = url.match(/https?:\/\/[\S]+/) %>
+            <% if tweet.include?('http') && url.match(/^http/)%>
+              <% link = url.sub(';',' ')%>
               <div class="row"><%= link_to "", "#", class: "fa fa-thumbs-o-up "%>
                 <%= tweet.sub("#{link}", '') %>
               <%= link_to "#{link}",  "#{link}", target: "_" %>
@@ -35,6 +35,8 @@
         </div>
       </div>
     </div>
+
+    
 
     <div class="hn_news">
       <div class="col-xs-6 col-md-4">
