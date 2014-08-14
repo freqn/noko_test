@@ -10,7 +10,7 @@ class RedditScraper
   end
 
   def fetch_reddit_headlines(subreddit)
-    url = "http://www.reddit.com/search?q=#{subreddit.gsub(/\s/,"+")}"
+    url = "http://www.reddit.com/search?q=#{subreddit.gsub(/\s/,"+")}&sort=new"
     mech_page = @agent.get(url)
     num_pages_to_scrape = 1
     count = 0
