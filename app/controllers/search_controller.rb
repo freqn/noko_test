@@ -13,7 +13,7 @@ class SearchController < ApplicationController
     # params[:q] = 'ruby on rails' if params[:q].blank?
     @tweet_query = params[:q].gsub(/\s/,"%20").downcase
     @tweets = []
-    @client.search(params[:q]).take(70).each do |tweet|
+    @client.search(params[:q]).take(50).each do |tweet|
         @tweets << tweet.text
     end
   end
