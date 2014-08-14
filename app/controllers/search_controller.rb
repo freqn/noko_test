@@ -1,7 +1,7 @@
 class SearchController < ApplicationController
 
   def index
-    params[:q] = 'ruby programming' if params[:q].blank?
+    params[:q] = 'ruby on rails' if params[:q].blank?
     @reddit_query = params[:q].gsub(/\s/,"+")
     @fetch_reddit = RedditScraper.new.fetch_reddit_headlines(params[:q])
     @fetch_hn = HnScraper.new.fetch_hn_headlines(params[:q])

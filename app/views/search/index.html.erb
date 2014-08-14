@@ -20,16 +20,19 @@
     <div class="twitter">
       <div class="col-xs-6 col-md-4">
         <h5 class="sec-heading"><span class="pennant pennant-alt2"><span class="fa fa-twitter fa-6"></span></span></br></h5>
-        <h3 class="sub-head"> <%= link_to "#{params[:q]}", "https://twitter.com/search?q=#{@tweet_query}&src=typd", target: "_"%></h3>
+        <h3 class="sub-head"> <%= link_to "#{params[:q]}", "https://twitter.com/search?f=realtime&q=#{@tweet_query}&src=typd", target: "_"%></h3>
         <div class="headline_list">
           <% @tweets.each do |tweet| %>
-            <% url = URI.extract(tweet).join(' ') %>
-            <% if tweet.include?('http') && url.match(/^http/)%>
-              <% link = url.sub(';',' ')%>
-              <div class="row"><%= link_to "", "#", class: "fa fa-thumbs-o-up "%>
-                <%= tweet.sub("#{link}", '') %>
-              <%= link_to "#{link}",  "#{link}", target: "_" %>
-              </div>
+            <p><% tweet = tweet.sub(';','') %></p>
+            <% @url = URI.extract(tweet) %>
+            <% @url.each do |url|%>
+              <% if url.include?('http')%>
+                <% link = url.sub(';','') %>
+                <div class="row"><%= link_to "", "#", class: "fa fa-thumbs-o-up "%>
+                  <%= tweet.sub("#{link}", '') %>
+                <%= link_to "#{link}",  "#{link}", target: "_" %>
+                </div>
+              <% end %>
             <% end %>
           <% end %>
         </div>
