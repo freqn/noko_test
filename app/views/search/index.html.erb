@@ -26,11 +26,11 @@
             <p><% tweet = tweet.sub(';','') %></p>
             <% @url = URI.extract(tweet) %>
             <% @url.each do |url|%>
-              <% if url.include?('http') || url.include?('t.co')%>
+              <% if url.include?('http') %>
                 <% link = url.sub(';','') %>
                 <div class="row"><%= link_to "", "#", class: "fa fa-thumbs-o-up "%>
                   <%= tweet.sub("#{link}", '') %>
-                <%= link_to "#{link}",  "#{link}", target: "_" %>
+                <%= link_to "http://t.co..",  "#{link}", target: "_" %>
                 </div>
               <% end %>
             <% end %>
