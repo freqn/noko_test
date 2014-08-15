@@ -12,6 +12,7 @@
           <% @fetch_reddit.each do |url| %>
             <div class="row"><%= link_to "", "#", class: "fa fa-thumbs-o-up "%>
               <%= link_to url[:content], url[:href], target: '_' %></div>
+              <div class="line"></div>
           <% end %>
         </div>
       </div>
@@ -23,15 +24,28 @@
         <h3 class="sub-head"> <%= link_to "#{params[:q]}", "https://twitter.com/search?f=realtime&q=#{@tweet_query}&src=typd", target: "_"%></h3>
         <div class="headline_list">
           <% @tweets.each do |tweet| %>
-            <p><% tweet = tweet.sub(';','') %></p>
+            <% tweet = tweet.sub(';','') %>
+            <!--<% if tweet.include?('@') %>
+              <% users = tweet.scan(/@([a-z0-9_]+)/i).join(' ') %>
+              <% @user = users.split[0] %>
+            <% elsif tweet.include?(" @ ") %>
+              @user = "twitter"
+            <% else %>
+              <% @user = "twitter" %>
+            <% end %>
+            <% @user_link = "http://twitter.com/#{@user}"%>-->
             <% @url = URI.extract(tweet) %>
             <% @url.each do |url|%>
               <% if url.include?('http') %>
                 <% link = url.sub(';','') %>
                 <div class="row"><%= link_to "", "#", class: "fa fa-thumbs-o-up "%>
-                  <%= tweet.sub("#{link}", '') %>
-                <%= link_to "http://t.co..",  "#{link}", target: "_" %>
+                 <%= tweet.sub("#{link}", '') %>
+                <%= link_to "http://t.co...",  "#{link}", target: "_" %>
+                <!--<% unless @user == "twitter" %>
+                  <p class="author"><%= link_to "-#{@user}", @user_link, class: "user", target: "_" %></p>
+                <% end %>-->
                 </div>
+                <div class="line"></div>
               <% end %>
             <% end %>
           <% end %>
@@ -47,6 +61,7 @@
           <% @fetch_hn.each do |url| %>
             <div class="row"><%= link_to "", "#", class: "fa fa-thumbs-o-up "%>
             <%= link_to url[:content], url[:href], target: '_' %></div>
+            <div class="line"></div>
           <% end %>
         </div>
       </div>
