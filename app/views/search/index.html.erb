@@ -10,7 +10,10 @@
         <h3 class="sub-head"><%=link_to "#{params[:q]}", "http://www.reddit.com/search?q=#{@reddit_query}&sort=new", target: "_" %></h3>
         <div class="headline_list">
           <% @fetch_reddit.each do |url| %>
-            <div class="row"><%= link_to "", "#", class: "fa fa-lightbulb-o "%>
+            <div class="row">
+              <% if user_signed_in? %>
+                <%= link_to "", "#", class: "fa fa-lightbulb-o "%>
+              <% end %>
               <%= url[:content] %><%= link_to " ", url[:href], class: "glyphicon glyphicon-globe", target: '_' %></div>
               <div class="line"></div>
           <% end %>
@@ -38,10 +41,13 @@
             <% @url.each do |url|%>
               <% if url.include?('http') %>
                 <% link = url.sub(';','') %>
-                <div class="row"><%= link_to "", "#", class: "fa fa-lightbulb-o "%>
-                 <%= tweet.sub("#{link}", '') %>
-                <%= link_to "",  "#{link}", class: "glyphicon glyphicon-globe", target: "_" %>
-                <!--<% unless @user == "twitter" %>
+                <div class="row">
+                  <% if user_signed_in? %>
+                    <%= link_to "", "#", class: "fa fa-lightbulb-o "%>
+                  <% end %>
+                  <%= tweet.sub("#{link}", '') %>
+                  <%= link_to "",  "#{link}", class: "glyphicon glyphicon-globe", target: "_" %>
+                  <!--<% unless @user == "twitter" %>
                   <p class="author"><%= link_to "-#{@user}", @user_link, class: "user", target: "_" %></p>
                 <% end %>-->
                 </div>
@@ -59,9 +65,12 @@
         <h3 class="sub-head"><%= link_to "#{params[:q]}", "http://news.ycombinator.com", target: "_"%></h3>
         <div class="headline_list">
           <% @fetch_hn.each do |url| %>
-            <div class="row"><%= link_to "", "#", class: "fa fa-lightbulb-o "%>
-            <%= url[:content] %><%= link_to "", url[:href], class: "glyphicon glyphicon-globe", target: '_' %></div>
-            <div class="line"></div>
+            <div class="row">
+              <% if user_signed_in? %>
+                <%= link_to "", "#", class: "fa fa-lightbulb-o "%>
+              <% end %>
+              <%= url[:content] %><%= link_to "", url[:href], class: "glyphicon glyphicon-globe", target: '_' %></div>
+              <div class="line"></div>
           <% end %>
         </div>
       </div>
