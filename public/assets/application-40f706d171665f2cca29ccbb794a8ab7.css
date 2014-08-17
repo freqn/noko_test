@@ -10170,61 +10170,65 @@ button.close {
 /* universal */
 /* line 45, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 html body {
-  background-color: #26292C;
+  background: url(/assets/iron_background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-/* line 49, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 53, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .btn-primary {
   background: #DF691A;
   border: none;
 }
 
-/* line 54, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 58, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .btn-primary:hover {
   background: #B45F04;
 }
 
-/* line 58, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 62, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .center {
   background: transparent;
   margin: 0 auto;
   padding: 0;
   text-align: center;
 }
-/* line 63, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 67, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .center h3 {
   font-size: 2.5em;
   color: #6B6C6F;
 }
 
-/* line 70, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 74, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .jumbotron p {
   margin-bottom: 15px;
 }
 
-/* line 74, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 78, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 h3 {
   margin-bottom: 10px;
 }
 
-/* line 78, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 82, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .main-headline {
   font-weight: bold;
 }
 
-/* line 82, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 86, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .sec-heading {
   text-align: center;
   font-weight: bold;
 }
 
-/* line 87, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 91, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .fa .fa-reddit .fa-6 {
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 92, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 96, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .input {
   text-align: center;
   width: 14%;
@@ -10245,9 +10249,9 @@ h3 {
   box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.9) ;
 }
 
-/* line 107, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 111, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .btn-success {
-  background: #26292C;
+  background: transparent;
   color: #6B6C6F;
   border: 2px solid #6B6C6F;
   margin-top: .2em;
@@ -10262,7 +10266,7 @@ h3 {
   transition: 0.3s;
 }
 
-/* line 117, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 121, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .btn-success:hover {
   color: #26292C;
   border: 2px solid #26292C;
@@ -10277,7 +10281,7 @@ h3 {
   box-shadow: -3 3px 4px black ;
 }
 
-/* line 126, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 130, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .btn-success:active {
   color: #26292C;
   border: 2px solid #26292C;
@@ -10289,13 +10293,13 @@ h3 {
   transition: 0.3s;
 }
 
-/* line 133, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 137, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 textarea:focus, input:focus {
   outline: 0;
 }
 
 /* navigation */
-/* line 139, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 143, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .navbar-brand {
   font-family: "Doppio One";
   color: #fff;
@@ -10307,25 +10311,25 @@ textarea:focus, input:focus {
   padding-top: .55em;
 }
 
-/* line 148, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 152, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav li a {
   font-size: 1.5em;
   color: #BDBEBF;
   text-shadow: -2px 2px 5px #1a1a1f;
 }
-/* line 152, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 156, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-nav li a:hover {
   color: #fff;
 }
 
-/* line 157, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 161, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .nav li a {
   padding-top: .5em;
 }
 
-/* line 161, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 165, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .navbar-default {
   background: transparent;
   box-shadow: none;
@@ -10345,7 +10349,7 @@ textarea:focus, input:focus {
   box-shadow: inset 0px 5px 5px 2px rgba(45, 42, 42, 0.62);
 }
 
-/* line 173, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 177, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .active {
   border-bottom: .7em solid #474749;
   background: #474749;
@@ -10368,7 +10372,7 @@ textarea:focus, input:focus {
   -moz-box-shadow: inset 0px 5px 5px 2px rgba(45, 42, 42, 0);
   box-shadow: inset 0px 5px 5px 2px rgba(45, 42, 42, 0);
 }
-/* line 187, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 191, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .active #blog {
   background: #474749;
   -webkit-border-radius: 0px 0px 0px 5px;
@@ -10376,27 +10380,27 @@ textarea:focus, input:focus {
   -ms-border-radius: 0px 0px 0px 5px;
   border-radius: 0px 0px 0px 5px;
 }
-/* line 191, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 195, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .active .in {
   background: #474749;
   margin-top: -100px;
 }
-/* line 194, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 198, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .active .in ul .rowdown {
   border-bottom: 1px solid white;
 }
 
-/* line 200, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 204, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .white {
   color: white !important;
 }
 
-/* line 204, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 208, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .dark {
   color: #BDBDBD;
 }
 
-/* line 208, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 212, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .navbar-right, .dropdown-menu {
   font-weight: bold;
   font-family: "Doppio One";
@@ -10408,7 +10412,7 @@ textarea:focus, input:focus {
   transition: 0.4s;
 }
 
-/* line 215, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 219, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .navbar-right li:hover {
   background-color: #3C3C3D;
   -webkit-border-radius: 3px;
@@ -10417,12 +10421,12 @@ textarea:focus, input:focus {
   border-radius: 3px;
 }
 
-/* line 220, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 224, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .nav_width {
   width: 100%;
 }
 
-/* line 226, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 230, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .dropdown-menu {
   background: transparent;
   border: none;
@@ -10430,17 +10434,17 @@ textarea:focus, input:focus {
   border: none;
   padding: 0;
 }
-/* line 232, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 236, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .dropdown-menu li {
   background: #474749;
   padding: 0;
 }
-/* line 235, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 239, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .dropdown-menu li a {
   padding: .4em 0 .4em 1.2em;
   color: #777777;
 }
-/* line 239, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 243, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .dropdown-menu li a:hover {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -10449,12 +10453,12 @@ textarea:focus, input:focus {
   background-color: #3C3C3D;
 }
 
-/* line 247, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 251, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .devise {
   padding-left: 150px;
 }
 
-/* line 251, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 255, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .status {
   color: #fff;
   font-size: 1.3em;
@@ -10463,35 +10467,35 @@ textarea:focus, input:focus {
   opacity: 0.7;
 }
 
-/* line 259, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 263, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .container-fluid {
   padding: 0px;
 }
 
-/* line 263, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 267, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .about {
   margin: 0 auto;
   width: 70%;
 }
 
-/* line 268, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 272, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .icon-bar {
   background-color: #FF8000 !important;
 }
 
 /* form fields */
-/* line 274, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 278, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .email_field, .password_field {
   text-align: center;
 }
 
-/* line 278, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 282, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .spacer {
   margin-top: 5px;
 }
 
 /* notifications */
-/* line 284, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 288, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .alert, .alert-info {
   margin: 45px auto 20px 0;
   text-align: center;
@@ -10505,38 +10509,38 @@ textarea:focus, input:focus {
 }
 
 /* Placeholder Text*/
-/* line 295, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 299, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 ::-webkit-input-placeholder {
   font-weight: normal;
   font-family: "Doppio One", serif;
 }
 
-/* line 300, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 304, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 :-moz-placeholder {
   /* Firefox 18- */
   font-weight: normal;
   font-family: "Doppio One", serif;
 }
 
-/* line 305, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 309, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 ::-moz-placeholder {
   /* Firefox 19+ */
   font-weight: normal;
   font-family: "Doppio One", serif;
 }
 
-/* line 310, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 314, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 :-ms-input-placeholder {
   font-weight: normal;
   font-family: "Doppio One", serif;
 }
 
-/* line 315, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 319, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .content-wrapper {
   padding-top: 0.5em;
 }
 
-/* line 319, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 323, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .headline_list {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -10555,7 +10559,7 @@ textarea:focus, input:focus {
   position: relative;
   opacity: .9;
 }
-/* line 328, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 331, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .headline_list a {
   -o-transition: 0.3s;
   -ms-transition: 0.3s;
@@ -10564,49 +10568,52 @@ textarea:focus, input:focus {
   transition: 0.3s;
 }
 
-/* line 332, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 335, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .sub-head {
   text-align: center;
   padding-bottom: 0.7em;
   font-size: 2em;
+  font-weight: normal;
   text-shadow: -2px 2px 5px #1a1a1f;
 }
-/* line 337, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 341, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .sub-head a {
-  color: #26292C;
+  color: #6B6C6F;
   -o-transition: 0.3s;
   -ms-transition: 0.3s;
   -moz-transition: 0.3s;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-/* line 340, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 344, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .sub-head a:hover {
+  color: #3F81BA;
   text-decoration: none;
-  text-shadow: -1px 1px 8px rgba(70, 130, 222, 0.9);
+  text-shadow: 0px 0px 3px #000;
 }
 
-/* line 348, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 353, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .row {
   margin: auto;
   width: auto;
-  -o-transition: 0.4s;
-  -ms-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-shadow: 0px 0px 2px #6B6C6F;
   line-height: 1.2;
   padding: .6em;
   padding-bottom: .7em;
-  color: #6B6C6F;
+  color: transparent;
 }
 
-/* line 358, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 364, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .row:nth-of-type(1) {
   padding-top: .7em;
 }
 
-/* line 360, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 366, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .row:nth-of-type(1):hover {
   -webkit-border-radius: 8px 8px 0px 0px;
   -moz-border-radius: 8px 8px 0px 0px;
@@ -10614,33 +10621,45 @@ textarea:focus, input:focus {
   border-radius: 8px 8px 0px 0px;
 }
 
-/* line 364, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 370, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .row:hover {
   text-decoration: none;
   color: #A2A4A8;
   background-color: #3C3C3D;
-  text-shadow: -1px 1px 5px #1a1a1f;
+  text-shadow: -1px 1px 2px #1a1a1f;
   border: none;
+  -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.9) ;
+  -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.9) ;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.9) ;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
-/* line 374, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 378, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .row:hover a {
   color: #FFD046;
 }
+/* line 381, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+.row:hover .glyphicon-globe {
+  color: #3F81BA;
+  text-shadow: -1px 1px 5px #1a1a1f;
+}
 
-/* line 379, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 387, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .row a:hover {
   color: #FE9A35;
   text-decoration: none;
   border: none;
+  -o-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
-/* line 384, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
-.row:hover {
-  -webkit-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.9) ;
-  -moz-box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.9) ;
-  box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.9) ;
-}
-/* line 386, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 394, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .row:hover .fa-lightbulb-o {
   -webkit-animation-name: spaceboots;
   -webkit-animation-duration: 0.8s;
@@ -10649,27 +10668,54 @@ textarea:focus, input:focus {
   -webkit-animation-timing-function: linear;
 }
 
-/* line 395, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 403, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .row-twitter {
   padding-bottom: 0;
 }
 
-/* line 399, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 407, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .fa-lightbulb-o {
   padding: 0 0.3em;
   padding-bottom: .1em;
   color: #646568;
   font-size: 1.3em;
   font-weight: bold;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
-/* line 405, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 414, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .fa-lightbulb-o:hover {
   color: #09F84F !important;
   text-decoration: none;
   text-shadow: -1px 1px 8px rgba(70, 130, 222, 0.9);
+  -o-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
-/* line 412, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 422, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+.glyphicon-globe {
+  padding-left: .4em;
+  color: #6B6C6F;
+  font-size: .85em;
+  vertical-align: center;
+}
+/* line 427, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+.glyphicon-globe:hover {
+  color: #09F84F !important;
+}
+
+/* line 432, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .fa-twitter:hover, .fa-reddit:hover, .fa-hacker-news:hover {
   -webkit-animation-name: spaceboots;
   -webkit-animation-duration: 0.5s;
@@ -10679,14 +10725,14 @@ textarea:focus, input:focus {
   text-shadow: -2px 2px 5px #1a1a1f;
 }
 
-/* line 421, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 441, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .author {
   font-size: .6em;
   text-align: right;
   margin-bottom: .2em;
 }
 
-/* line 427, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 447, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .user {
   color: #275488;
 }
@@ -10705,12 +10751,12 @@ textarea:focus, input:focus {
 }
 */
 /* footer */
-/* line 454, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 474, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .footer {
   padding-top: 15px;
 }
 
-/* line 458, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 478, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 small {
   margin: 0 auto;
   text-align: center;
@@ -10724,7 +10770,7 @@ small {
   @include transition(.5s);
 }*/
 /* Pennant */
-/* line 473, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 493, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .pennant {
   position: relative;
   display: inline-block;
@@ -10737,7 +10783,7 @@ small {
   opacity: 0.9;
 }
 
-/* line 485, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 505, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .pennant:after {
   content: '';
   position: absolute;
@@ -10748,34 +10794,34 @@ small {
   border-right: solid 4.5em transparent;
 }
 
-/* line 495, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 515, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .pennant span {
   display: block;
   margin: 0 auto;
 }
 
-/* line 500, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 520, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .pennant span:before {
   font-size: 4.5em;
   color: #fff;
 }
 
-/* line 505, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 525, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .pennant-alt {
   background-color: #ff6600;
 }
 
-/* line 510, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 530, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .pennant-alt:after {
   border-top-color: #ff6600;
 }
 
-/* line 514, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 534, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .pennant-alt2 {
   background-color: #55acee;
 }
 
-/* line 518, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
+/* line 538, /Users/ma-eylerjh/Desktop/box/projects/quearch/app/assets/stylesheets/custom.css.scss */
 .pennant-alt2:after {
   border-top-color: #55acee;
 }
