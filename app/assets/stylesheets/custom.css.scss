@@ -43,7 +43,11 @@ $goog_font: 'Doppio One' ;
 /* universal */
 
 html body {
-  background-color: #26292C;
+  background: image-url('iron_background.jpg')no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .btn-primary {
@@ -105,7 +109,7 @@ h3 {
 }
 
  .btn-success {
-   background: #26292C;
+   background: transparent;
    color: #6B6C6F;
    border: 2px solid #6B6C6F;
    margin-top: .2em;
