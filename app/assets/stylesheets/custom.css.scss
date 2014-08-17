@@ -337,12 +337,12 @@ textarea:focus, input:focus{
   padding-bottom: 0.7em;
   font-size: 2em;
   font-weight: normal;
-  text-shadow: 0px 0px 2px #949699;
+  text-shadow: 0px 0px 1px #BDBEBF;
   a {
     color: transparent;
     @include transition(.3s);
     &:hover{
-      color: #949699;
+      color: #BDBEBF;
       text-decoration: none;
       text-shadow: 0px 0px 3px #000;
     }
@@ -354,11 +354,10 @@ textarea:focus, input:focus{
   margin: auto;
   width: auto;
   @include transition(.3s);
-  text-shadow: 0px 0px 1px #6B6C6F;
   line-height: 1.2;
   padding: .6em;
   padding-bottom: .7em;
-  color: transparent;
+  color: #6B6C6F;
   }
 
 .row:nth-of-type(1){padding-top: .7em}
