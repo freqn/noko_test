@@ -10,7 +10,7 @@
         <h3 class="sub-head"><%=link_to "#{params[:q]}", "http://www.reddit.com/search?q=#{@reddit_query}&sort=new", target: "_" %></h3>
         <div class="headline_list">
           <% @fetch_reddit.each do |url| %>
-            <div class="row"><%= link_to "", "#", class: "fa fa-thumbs-o-up "%>
+            <div class="row"><%= link_to "", "#", class: "fa fa-lightbulb-o "%>
               <%= url[:content] %><%= link_to " link", url[:href], target: '_' %></div>
               <div class="line"></div>
           <% end %>
@@ -38,7 +38,7 @@
             <% @url.each do |url|%>
               <% if url.include?('http') %>
                 <% link = url.sub(';','') %>
-                <div class="row"><%= link_to "", "#", class: "fa fa-thumbs-o-up "%>
+                <div class="row"><%= link_to "", "#", class: "fa fa-lightbulb-o "%>
                  <%= tweet.sub("#{link}", '') %>
                 <%= link_to "link",  "#{link}", target: "_" %>
                 <!--<% unless @user == "twitter" %>
@@ -59,7 +59,7 @@
         <h3 class="sub-head"><%= link_to "#{params[:q]}", "http://news.ycombinator.com", target: "_"%></h3>
         <div class="headline_list">
           <% @fetch_hn.each do |url| %>
-            <div class="row"><%= link_to "", "#", class: "fa fa-thumbs-o-up "%>
+            <div class="row"><%= link_to "", "#", class: "fa fa-lightbulb-o "%>
             <%= url[:content] %><%= link_to " link", url[:href], target: '_' %></div>
             <div class="line"></div>
           <% end %>
