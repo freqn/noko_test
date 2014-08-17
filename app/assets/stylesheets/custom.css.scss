@@ -99,27 +99,35 @@ h3 {
   border: none;
   @include border-radius(5px);
   background: #E6E6E6;
-  margin: 5px 0;
+  margin-top: .3em;
+  margin-bottom: 5px;
   @include box-shadow(inset 0, 1px, 6px, rgba(0, 0, 0, 0.9));
 }
 
  .btn-success {
-   background: #97683A;
-   border: none;
-   @include box-shadow(0, 1px, 2px, rgba(0, 0, 0, 0.3));
-   @include transition(.1s)
+   background: #26292C;
+   color: #6B6C6F;
+   border: 2px solid #6B6C6F;
+   margin-top: .2em;
+   margin-bottom: -0.2em;
+   @include box-shadow(-1, 1px, 3px, rgba(0, 0, 0, 0.1));
+   @include transition(.3s);
  }
 
  .btn-success:hover {
-   @include border-radius(5px);
-   background: #DF7401;
-   @include box-shadow(0, 1px, 3px, rgba(0, 0, 0, 0.5));
-   border: none;
+   color: #26292C;
+   border: 2px solid #26292C;
+   background: #6B6C6F;
+   @include transition(.3s);
+   @include box-shadow(-3, 3px, 4px, rgba(0, 0, 0, 1));
  }
 
+
  .btn-success:active {
-   background: #DF7401;
-   border: none;
+   color: #26292C;
+   border: 2px solid #26292C;
+   background: #6B6C6F;
+   @include transition(.3s);
  }
 
 textarea:focus, input:focus{
