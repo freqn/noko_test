@@ -43,11 +43,7 @@ $goog_font: 'Doppio One' ;
 /* universal */
 
 html body {
-  background: image-url('brownpaper1.jpg')no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: #26292C;
 }
 
 .btn-primary {
@@ -66,7 +62,7 @@ html body {
   text-align: center;
   h3 {
     font-size: 2.5em;
-    color: #000;
+    color: #6B6C6F;
     // text-shadow: -1px 1px 3px rgba(26, 26, 31, 1);
   }
 }
@@ -143,7 +139,7 @@ textarea:focus, input:focus{
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav li a {
   font-size: 1.5em;
-  color: #fff;
+  color: #BDBEBF;
   text-shadow: -2px 2px 5px rgba(26, 26, 31, 1);
   &:hover{
     color: #fff;
@@ -209,7 +205,7 @@ textarea:focus, input:focus{
 }
 
 .navbar-right li:hover {
-  background: #D8D8D8;
+  background-color: #3C3C3D;
   @include border-radius(3px);
 }
 
@@ -234,7 +230,7 @@ textarea:focus, input:focus{
     color: #777777;
     &:hover{
       @include border-radius(3px);
-      background: #D8D8D8;
+      background-color: #3C3C3D;
     }
     }
   }
@@ -316,7 +312,7 @@ textarea:focus, input:focus{
   @include border-radius(8px);
   @include box-shadow(inset 0, 1px, 6px, rgba(0, 0, 0, 0.9));
   //@include box-shadow(0, 2px, 8px, rgba(0, 0, 0, 0.3));
-  background: #fff;
+  background: #434345;
   //font-weight: bold;
   font-size: 1.5em;
   @include transition(2s);
@@ -329,14 +325,13 @@ textarea:focus, input:focus{
   text-align: center;
   padding-bottom: 0.7em;
   font-size: 2em;
-  color: black;
+  text-shadow: -2px 2px 5px rgba(26, 26, 31, 1);
   a {
-    color: black;
+    color: #26292C;
     @include transition(.3s);
     &:hover{
-      color: #FFF;
       text-decoration: none;
-      text-shadow: -2px 2px 5px rgba(26, 26, 31, 1);
+      text-shadow: -1px 1px 8px rgba(70, 130, 222, .9);
     }
   }
 
@@ -345,10 +340,11 @@ textarea:focus, input:focus{
 .row {
   margin: auto;
   width: auto;
-  //@include transition(.5s);
+  @include transition(.4s);
   line-height: 1.2;
   padding: .6em;
   padding-bottom: .7em;
+  color: #6B6C6F;
   }
 
 .row:nth-of-type(1){padding-top: .7em}
@@ -359,13 +355,14 @@ textarea:focus, input:focus{
 
 .row:hover {
   text-decoration: none;
-  color: #fff;
-  background-color: #63645F;
+  color: #A2A4A8;
+  background-color: #3C3C3D;
+  text-shadow: -1px 1px 5px rgba(26, 26, 31, 1);
   border: none;
   //@include box-shadow(0px, 0px, 0px, 1px, white);
   .fa-thumbs-o-up {
-    text-shadow: -2px 2px 5px rgba(26, 26, 31, 1);
-    font-weight: bold;
+    text-shadow: -1px 1px 5px rgba(26, 26, 31, 1);
+    // font-weight: bold;
   }
   a {
     color: #FFD046;
@@ -395,7 +392,7 @@ textarea:focus, input:focus{
 .fa-thumbs-o-up {
   padding: 0 0.3em;
   padding-bottom: .1em;
-  color: #474749;
+  color: #646568;
   font-size: 1.2em;
   //vertical-align: center;
   &:hover {

@@ -11,7 +11,7 @@
         <div class="headline_list">
           <% @fetch_reddit.each do |url| %>
             <div class="row"><%= link_to "", "#", class: "fa fa-thumbs-o-up "%>
-              <%= link_to url[:content], url[:href], target: '_' %></div>
+              <%= url[:content] %><%= link_to " link", url[:href], target: '_' %></div>
               <div class="line"></div>
           <% end %>
         </div>
@@ -40,7 +40,7 @@
                 <% link = url.sub(';','') %>
                 <div class="row"><%= link_to "", "#", class: "fa fa-thumbs-o-up "%>
                  <%= tweet.sub("#{link}", '') %>
-                <%= link_to "http...",  "#{link}", target: "_" %>
+                <%= link_to "link",  "#{link}", target: "_" %>
                 <!--<% unless @user == "twitter" %>
                   <p class="author"><%= link_to "-#{@user}", @user_link, class: "user", target: "_" %></p>
                 <% end %>-->
@@ -60,13 +60,11 @@
         <div class="headline_list">
           <% @fetch_hn.each do |url| %>
             <div class="row"><%= link_to "", "#", class: "fa fa-thumbs-o-up "%>
-            <%= link_to url[:content], url[:href], target: '_' %></div>
+            <%= url[:content] %><%= link_to " link", url[:href], target: '_' %></div>
             <div class="line"></div>
           <% end %>
         </div>
       </div>
     </div>
-
-
   </div>
 </div>
