@@ -35,9 +35,9 @@ class HnScraper
        end
 
       count += 1
-      # if num_pages_to_scrape > 1
-      #  mech_page = @agent.get(page.css('.nextprev').css('a').last.attributes['href'].value)
-      # end
+      if num_pages_to_scrape > 1
+        mech_page = @agent.get(page.css('.title').css('a').last.attributes['href'].value)
+      end
     end
     @headline
   end
