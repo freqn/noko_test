@@ -28,15 +28,6 @@
         <div class="headline_list">
           <% @tweets.each do |tweet| %>
             <% tweet = tweet.sub(';','') %>
-            <!--<% if tweet.include?('@') %>
-              <% users = tweet.scan(/@([a-z0-9_]+)/i).join(' ') %>
-              <% @user = users.split[0] %>
-            <% elsif tweet.include?(" @ ") %>
-              @user = "twitter"
-            <% else %>
-              <% @user = "twitter" %>
-            <% end %>
-            <% @user_link = "http://twitter.com/#{@user}"%>-->
             <% @url = URI.extract(tweet) %>
             <% @url.each do |url|%>
               <% if url.include?('http') %>
@@ -47,9 +38,6 @@
                   <% end %>
                   <%= tweet.sub("#{link}", '') %>
                   <%= link_to "",  "#{link}", class: "glyphicon glyphicon-globe", target: "_" %>
-                  <!--<% unless @user == "twitter" %>
-                  <p class="author"><%= link_to "-#{@user}", @user_link, class: "user", target: "_" %></p>
-                <% end %>-->
                 </div>
                 <div class="line"></div>
               <% end %>
