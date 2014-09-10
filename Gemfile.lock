@@ -246,7 +246,7 @@ DEPENDENCIES
   jquery-rails
   mechanize
   newrelic_rpm
-  nokogiri (~> 1.6.2)
+  nokogiri
   pg
   pry
   pry-byebug
