@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  root 'search#index'
-  resources :tweets, only: [:index]
+  root 'tweets#index'
+  resources :tweets
   get 'about' => 'pages#about'
-
-
 end

@@ -17,7 +17,8 @@ gem 'devise', '~> 3.4.1'
 gem 'simple_form'
 gem 'sdoc', '~> 0.4.1',          group: :doc
 gem "font-awesome-rails"
-gem 'newrelic_rpm'
+gem 'haml', '~> 4.0', '>= 4.0.7'
+gem 'haml-rails', '~> 0.9.0'
 
 group :development do
   gem 'pry'

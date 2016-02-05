@@ -11,7 +11,4 @@ class TwitterClient
       config.access_token_secret = Rails.application.secrets.twitter_access_token_secret
     end
   end
-
-
-
 end

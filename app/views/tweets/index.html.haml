@@ -1,0 +1,35 @@
+.container-fluid.centered
+  .panel.panel-default
+    .panel-body
+      = render 'layouts/form'
+  .col-xs-8
+    test
+    %ul
+      - @tweets.each do |tweet|
+        .panel.panel-default
+          .panel-body
+            %li= tweet
+
+
+  /
+    <div class="twitter">
+    <div class="col-xs-6 col-md-4">
+    <h5 class="sec-heading"><span class="pennant pennant-alt2"><span class="fa fa-twitter fa-6"></span></span></br></h5>
+    <h3 class="sub-head"> <haml:loud> link_to &amp;quot;\#{params[:q]}&amp;quot;, &amp;quot;https://twitter.com/search?f=realtime&amp;amp;q=\#{@tweet_query}&amp;amp;src=typd&amp;quot;, target: &amp;quot;_&amp;quot;</haml:loud></h3>
+    <div class="headline_list">
+    <haml:silent>         @tweets.each do |tweet|
+    </haml:silent><haml:block><haml:silent>           tweet = tweet.sub(';','')
+    </haml:silent><haml:silent>           @url = URI.extract(tweet)
+    </haml:silent><haml:silent>           @url.each do |url|
+    </haml:silent><haml:block><haml:silent>             if url.include?('http')
+    </haml:silent><haml:block><haml:silent>               link = url.sub(';','')
+    </haml:silent>              <div class="row">
+    <haml:silent>                 if user_signed_in?
+    </haml:silent><haml:block>                  <haml:loud> link_to &amp;quot;&amp;quot;, &amp;quot;#&amp;quot;, class: &amp;quot;fa fa-lightbulb-o &amp;quot;</haml:loud>
+    </haml:block>                <haml:loud> tweet.sub(&amp;quot;\#{link}&amp;quot;, '') </haml:loud>
+    <haml:loud> link_to &amp;quot;&amp;quot;,  &amp;quot;\#{link}&amp;quot;, class: &amp;quot;glyphicon glyphicon-globe&amp;quot;, target: &amp;quot;_&amp;quot; </haml:loud>
+    </div>
+    <div class="line"></div>
+    </haml:block></haml:block></haml:block>      </div>
+    </div>
+    </div>

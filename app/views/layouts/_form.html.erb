@@ -1,10 +1,12 @@
-<div class="jumbotron center">
-  <h3>Looking for something simple?</h3>
-  <%= form_tag("/", method: "get") do %>
-    <p><%= text_field_tag :q, nil, class: 'input', placeholder: 'search here', autofocus: true %></p>
-    <p><%= submit_tag 'Fetch', class: "btn btn-lg btn-success" %></p>
-    <% if params[:q].blank? %>
-      <% params[:q] = 'all' %>
+<div class="container-fluid">
+  <div class="row">
+    <h3>Search for something</h3>
+    <%= form_tag("/", method: "get") do %>
+      <p><%= text_field_tag :q, nil, class: 'input', placeholder: 'search here', autofocus: true %></p>
+      <p><%= submit_tag 'Fetch', class: "btn btn-lg btn-success" %></p>
+      <% if params[:q].blank? %>
+        <% params[:q] = 'all' %>
+      <% end %>
     <% end %>
-  <% end %>
+  </div>
 </div>
