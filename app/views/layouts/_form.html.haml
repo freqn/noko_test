@@ -1,0 +1,5 @@
+.row
+  %h3 Topic?
+  = form_tag("/", method: "get") do
+    %p= text_field_tag :search, nil, class: 'input', placeholder: 'search here', autofocus: true
+    %span= submit_tag 'Fetch', class: "btn btn-sm btn-success"

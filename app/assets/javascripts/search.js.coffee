@@ -8,11 +8,10 @@ $(window).scroll ->
   nav_drop = ".navbar, .dropdown-menu"
   if scroll > 0
     $(nav_drop).addClass "active"
-    $(nav_trans).addClass "white"
-    $(nav_trans).removeClass "dark"
+    $(nav_trans).addClass "dark"
+    $(nav_trans).removeClass "white"
   else
     $(nav_drop).removeClass "active"
-    $(nav_trans).removeClass "white"
-    $(nav_trans).addClass "dark"
+    $(nav_trans).removeClass "dark"
+    $(nav_trans).addClass "white"
   return
-
