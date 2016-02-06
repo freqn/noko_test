@@ -1,0 +1,14 @@
+.container-fluid
+	.row
+		.col-md-4
+		.col-md-4
+			%h3 Saved Tweets
+		.col-md-4
+	.row
+		.col-md-12
+			%ol
+				- @tweets.each do |tweet|
+					- @content = tweet.content
+					.row
+						%li
+							= @content

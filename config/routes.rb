@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root 'tweets#index'
   resources :tweets
   get 'about' => 'pages#about'
+  get 'saved' =>  'tweets#saved_tweets'
 end

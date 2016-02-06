@@ -17,6 +17,9 @@
                 .row
                   = tweet
                   = link_to "#{link}",  "#{link}", target: "_"
+                  = form_for :tweet, url: tweets_path do |f|
+                    = f.hidden_field :content, value: tweet
+                    = f.submit
                 .line
 
 
